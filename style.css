@@ -1,0 +1,785 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    /* background-color: rgba(0, 0, 0, 0.687); */
+
+}
+
+
+.container {
+    width: min(90%, 1120px);
+    margin-inline: auto;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    
+   
+    
+}
+
+.background-header {
+    background: rgba(250, 250, 250, 0.99);
+    background: transparent;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.desktop-menue{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+   
+
+}
+.logo{
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 5rem;
+}
+.logo .span1 {
+    color: #ED563B;
+}
+.menues-link{
+    display: flex;
+    gap: 2.5rem;
+    
+}
+
+.menues-link li{
+    list-style: none;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.menues-link .scroll-one a {
+    color:  #ED563B ;
+    font-size: 0.8125rem;
+    font-weight: 500;
+}
+.menues-link li a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.menues-link .sign-up {
+    background-color: #ED563B;
+    padding: 10px 8px;
+    /* padding: 0.3rem; */
+    font-weight: 400;
+    line-height: 1.25rem;
+
+}
+
+.show-case {
+    display: none;
+   
+}
+
+.hamburger{
+    display: none;
+}
+.navigation{
+    display: none;
+}
+
+.Home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.Home video {
+    position: absolute;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+  }
+  
+
+.Home  .caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    text-transform: uppercase;
+    height: 100%;
+}
+
+
+
+.Home .caption h6{
+  
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 0.5px;
+
+}
+.Home .caption h2{
+  
+    margin-top: 1rem;
+    margin-bottom: 1.5625rem;
+    font-size: 5.25rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.Home .caption h2 span{
+    color: #ED563B;
+}
+
+
+.Home button{
+    font-size: 1rem;
+    padding: 12px 20px;
+    background-color: #ed563b;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+}
+
+.about .program {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+}
+
+.about .program  h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #232d39;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.about .program  h2 span{
+    color: #ED563B;
+}
+
+.about .program p {
+    
+    font-size: 14px;
+    line-height: 25px;
+    color: #7a7a7a;
+}
+
+.services {
+    display: flex;
+    gap: 2rem;
+    /* flex-wrap: wrap; */
+}
+
+
+.services ul li {
+    display: flex;
+    gap: 1rem;
+}
+
+.services ul {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    gap: 2rem;
+}
+.services ul li .right-content{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.services ul li h4 {
+    margin-top: 0px;
+    margin-bottom: 7px;
+    letter-spacing: 0.25px;
+    color: #232d39;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.services ul li p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #7a7a7a;
+}
+
+.services ul li a {
+    margin-top: 7px;
+    display: inline-block;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #ed563b;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.membership{
+    background-image: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg");
+    margin-top: 8rem;
+    padding: 5rem;
+    
+}
+.membership .call-to-action {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+   
+}
+.membership .call-to-action h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.membership .call-to-action span{
+    color: #ed563b;
+}
+
+.membership .call-to-action p {
+    .cta-content p {
+        font-size: 16px;
+        color: #fff;
+        margin: 15px 0px 25px 0px;
+    }
+}
+
+.membership .call-to-action button {
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #ed563b;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+}
+
+.classes .our-classes {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+}
+
+.classes .our-classes  h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #232d39;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.classes .our-classes  h2 span{
+    color: #ED563B;
+}
+
+.classes .our-classes p {
+    
+    font-size: 14px;
+    line-height: 25px;
+    color: #7a7a7a;
+}
+
+.training-classes {
+    display: flex;
+    gap: 4rem;
+
+}
+
+.training-classes .left-side {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    width:80%;
+}
+
+.training-classes .left-side ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.training-classes .left-side ul li {
+   display: flex;
+   gap: 1rem;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  padding: 25px;
+  width: 100%;
+}
+.training-classes .left-side ul .first-tap {
+    color: #ed563b;
+}
+.training-classes button{
+    text-align: center;
+    padding: 20px 30px;
+    width: 100%;
+    border-radius: 5px;
+   border: none;   
+    color: #fff;
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    background-color: #ed563b;
+}
+.training-classes .right-side{
+    max-width: 90%;
+}
+.training-classes .right-side img{
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.training-classes .right-side h4 {
+    font-size: 23px;
+    font-weight: 700;
+    color: #232d39;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.training-classes .right-side p {
+    font-size: 14px;
+    color: #7a7a7a;
+    text-align: justify;
+    margin-bottom: 28px;
+}
+
+.training-classes .right-side button{
+    font-size: 15px;
+    padding: 12px 20px;
+    background-color: #ed563b;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 30%;
+}
+
+.schedule{
+    background-image: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg") ;
+    margin-top: 2rem;
+    width:100%;
+ 
+}
+
+ .classes-schedule{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  
+}
+
+.classes-schedule  h2 {
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.classes-schedule  h2 span{
+    color: #ED563B;
+}
+
+.classes-schedule p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.schedule .days ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+
+.schedule .days  ul li:after {
+    content: "/";
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.schedule-table{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-bottom: 3rem;
+    
+}
+
+.schedule-table table, td   {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+     padding: 1rem;
+  
+}
+
+
+
+.expert-trainers{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.expert-trainers h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #232d39;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.expert-trainers  h2 span{
+    color: #ED563B;
+}
+
+.expert-trainers p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #7a7a7a;
+}
+
+.trainers-names {
+    display: flex;
+    gap: 2rem;
+}
+
+.trainers-names .trainer-item{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.trainers-names .trainer-item  span{
+    font-size: 13px;
+    font-weight: 500;
+    color: #ed563b;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.trainers-names .trainer-item h4 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #232d39;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
+}
+
+.trainers-names .trainer-item p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #7a7a7a;
+    text-align: justify;
+}
+
+.trainers-names .trainer-item ul li {
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+}
+
+.contact{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    
+}
+
+.map  .i-frames{
+    width: 600px;
+    height: 450px;
+  
+}
+
+.contact-us{
+    background-image: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg");
+    width: 100%;
+}
+
+.contact-form{
+
+margin: 1.6rem;
+background-color: #fff;
+height: 90%;
+
+
+}
+
+
+.contact-form  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1cap;
+
+   
+
+}
+
+.contact-form form input {
+    color: #7a7a7a;
+    font-size: 13px;
+    border: 1px solid #ddd; 
+    background-color: #fff;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    line-height: 40px;
+    padding: 0px 10px;
+    margin-bottom: 30px;
+}
+
+.contact-form form textarea{
+    height: 9.5rem;
+}
+
+.contact-form form .Name-email{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+
+}
+
+.contact-form form .Name-email .name {
+    width: 45%;
+}
+.contact-form form .Name-email .email {
+    width: 45%;
+}
+
+.contact-form form button{
+    display: inline-block;
+    font-size: 13px;
+    padding: 11px 17px;
+    background-color: #ed563b;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    width: 40%;
+    margin-top: 1rem;
+} 
+
+footer .container {
+  margin-left: 20rem;
+}
+
+footer .container span {
+    color: #ed563b;
+  }
+  
+@media (max-width: 768px){
+    .desktop-menue{
+        display: none;
+    }
+
+    .show-case {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        width: 100%;
+        align-items: center;
+        padding-left: 10px;
+        
+    }
+
+    .logo{
+        color: black;
+    }
+    i {
+        z-index: 10;
+        padding-right: 10px;
+        padding-top: 15px;
+    }
+.hamburger {
+    display: flex;
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    font-size: 2rem;
+}
+
+.mobile-menu {
+    background-color: white;
+    transform: translateX(10%);
+    transition: transform 350ms ease-in-out;
+}
+
+.mobile-menu[data-visible="false"] {
+    transform: translateX(100%);
+}
+
+.hamburger i[data-visible="true"]{
+    display: block;
+}
+
+.hamburger i[data-visible="false"]{
+    display: none;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+  
+}
+
+
+
+.navigation .menues-link{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    margin-top: 1rem;
+ 
+    
+   
+}
+.navigation .menues-link li{
+  border-bottom: 1PX solid gray;
+  color: black;
+   
+}
+
+.navigation .menues-link .scroll-one a {
+    color:  #ED563B ;
+    font-size: 0.8125rem;
+    font-weight: 500;
+}
+.navigation .menues-link .sign-up  a{
+    color: white;
+
+}
+.navigation .menues-link li a{
+  
+    color: black;
+     
+  }
+ 
+ 
+ 
+  .Home  .caption{
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    /* top: 300%; */
+    margin-top: 0px;
+    gap: 10px;
+    
+  }
+
+  .Home .caption h2 {
+    font-size: 4rem;
+  }
+
+  .services {
+    flex-wrap: wrap;
+  }
+
+  .membership{
+    padding: 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .training-classes{
+    flex-direction: column;
+  }
+  .training-classes .left-side{
+    width: 90%;
+  }
+  
+
+  .training-classes .right-side button{
+    width:60%;
+  }
+
+  
+  .trainers-names {
+    flex-direction: column;
+  }
+
+  
+  .contact{
+    flex-direction: column;
+   
+  
+}
+
+
+.map  .i-frames{
+    width: 450px;
+    height: 450px;}
+
+
+
+}
