@@ -27,14 +27,17 @@ header{
     
 }
 
-.background-header {
+.background-header
+{
+  
+
     background: rgba(250, 250, 250, 0.99);
-    background: transparent;
-    height: 80px;
-    position: fixed;
+    /* background: transparent; */
+    height: 5rem;
+    position: sticky;
     top: 0px;
-    left: 0px;
-    right: 0px;
+   
+    z-index: 3;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -46,7 +49,7 @@ header{
 
 }
 .logo{
-    color: white;
+    color: #232d39;
     font-size: 2rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -75,10 +78,15 @@ header{
 }
 .menues-link li a {
     text-decoration: none;
-    color: #ffff;
+    color: #212529;
 }
 
+.menues-link .sign-up a {
+    color: #fff;
+
+}
 .menues-link .sign-up {
+   
     background-color: #ED563B;
     padding: 10px 8px;
     /* padding: 0.3rem; */
@@ -101,22 +109,26 @@ header{
 
 .Home{
     position: relative;
-    height: 100vh;
+    height: calc( 100vh - 5rem) ;
     width: 100%;
+    z-index: 4;
 }
 .Home video {
     position: absolute;
     object-fit: cover;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -10;
+    /* right: 0; */
+    /* bottom: 0; */
+    width: 100%;
+    height: 110%;
+    /* min-width: 100%; */
+    /* min-height: 100%; */
+    /* z-index: 1; */
   }
   
 
 .Home  .caption{
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -124,6 +136,7 @@ header{
     gap: 5px;
     text-transform: uppercase;
     height: 100%;
+    z-index: 1;
 }
 
 
@@ -546,6 +559,7 @@ header{
     display: flex;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    width: 100%;
 
     
 }
@@ -628,9 +642,14 @@ height: 90%;
     margin-top: 1rem;
 } 
 
-footer .container {
-  margin-left: 20rem;
+footer {
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+  /* margin-left: 20rem; */
+
 }
+
 
 footer .container span {
     color: #ed563b;
@@ -640,14 +659,26 @@ footer .container span {
     .desktop-menue{
         display: none;
     }
+    
+    .background-header{
+        position: fixed;
+     
+        bottom: 0;
+        /* z-index: 15; */
+        /* width: 100%; */
+    }
 
     .show-case {
         display: flex;
         justify-content: space-between;
         background-color: white;
+      
         width: 100%;
         align-items: center;
         padding-left: 10px;
+        position: sticky;
+        top: 0px ;
+        z-index: 10;
         
     }
 
@@ -655,7 +686,7 @@ footer .container span {
         color: black;
     }
     i {
-        z-index: 10;
+     
         padding-right: 10px;
         padding-top: 15px;
     }
@@ -669,12 +700,16 @@ footer .container span {
 
 .mobile-menu {
     background-color: white;
-    transform: translateX(10%);
+    transform: translateY(100%);
     transition: transform 350ms ease-in-out;
+    position: absolute;
+    top: -205px;
+    width: 100%;
+    z-index: 5;
 }
 
 .mobile-menu[data-visible="false"] {
-    transform: translateX(100%);
+    transform: translateY(0%);
 }
 
 .hamburger i[data-visible="true"]{
@@ -724,6 +759,11 @@ footer .container span {
      
   }
  
+ .Home{
+    z-index: 2;
+    width: 100%;
+    
+ }
  
  
   .Home  .caption{
@@ -731,7 +771,6 @@ footer .container span {
     position: absolute;
     left: 10%;
     right: 10%;
-    /* top: 300%; */
     margin-top: 0px;
     gap: 10px;
     
